@@ -3,7 +3,7 @@ try
     import Plots
     println("Plots je instaliran.")
 catch
-    println("Instaliranje je u toku.")
+    println("Instaliranje Plots paketa je u toku.")
     global treba = 1;
 end
 x = convert(Bool,treba)
