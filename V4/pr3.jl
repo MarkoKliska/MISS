@@ -74,8 +74,9 @@ rezult bi nam ovde bio [2,3,4,5]
 
 ChatGPT i Bard kazu da diff() po defaultu vraca apsolutnu vrednost razlike ali sam to testirao i dobio brljotinu 
 =#
-
+#=
 println("Predjeni put prvog tela je: ")
 println(put1)
 println("Predjeni put drugog tela je: ")
 println(put2)
+=#
