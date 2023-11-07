@@ -24,7 +24,14 @@ sol = solve(prob)
 
 #d)
 
-v1 = [x[2] for x in sol.u]
+#=
+x[1] -> pozicija m1
+x[2] -> brzina m1
+x[3] -> pozicija m2
+x[4] -> brzina m2
+=#
+
+v1 = [x[2] for x in sol.u]      
 v2 = [x[4] for x in sol.u]
 
 ~,index1 = findmax(abs.(v1))

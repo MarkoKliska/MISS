@@ -60,18 +60,22 @@ plot!([sol.t[index2]], [poz2[index2]], markershape=:star5)
 #put2 = sum(abs.(diff(poz2)))
 
 #=
+kad racunamo duzine puteva moramo da koristimo abs jer dobijena vrednost za neke elemente diff() povratne vrednosti
+moze da bude negativna, a to samo znaci da smo se kretali u suprotnom smeru
+da ne stavimo abs oduzimali bi od ukupne duzine puta sto ce dati pogresno resenje
+
 OBJASNJENJE ZA diff()
-diff() ide kroz prosledjen niz i vraca apsolutnu vrednost razlike uzastopnih brojeva
+diff() ide kroz prosledjen niz i vraca razliku uzastopnih brojeva u nizu
 primer:
 A = [1, 3, 6, 10, 15]
 result = diff(A)
 
 rezult bi nam ovde bio [2,3,4,5]
-[]
+
+ChatGPT i Bard kazu da diff() po defaultu vraca apsolutnu vrednost razlike ali sam to testirao i dobio brljotinu 
 =#
-#=
+
 println("Predjeni put prvog tela je: ")
 println(put1)
 println("Predjeni put drugog tela je: ")
 println(put2)
-=#
