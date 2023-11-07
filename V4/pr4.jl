@@ -49,6 +49,6 @@ a2 = diff(v2) ./ diff(sol.t)
 plot(sol.t[1:end-1], [a1, a2], lw = 2, legend=:outerbottom)
 
 #=
-u liniji 42 imamo sol.t[1:end-1] a ne sol.t[1:end] jer diff() vraca niz koji je za 1 kraci zbog toga kako radi
-objasnjenje za diff() se nalazi u pr3.jl na liniji 63
+u liniji 49 imamo sol.t[1:end-1] a ne sol.t[1:end] jer diff() vraca niz koji je za 1 kraci od prosledjenog zbog toga kako radi
+objasnjenje za diff() se nalazi u pr3.jl na liniji 67
 =#
