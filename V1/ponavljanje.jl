@@ -89,7 +89,7 @@ triu(M)
 
 tril(M)
 tril(M,-2)
-#triu() se koristi za selekciju dela matrice koji se nalazi ispod glavne dijagonale
+#tril() se koristi za selekciju dela matrice koji se nalazi ispod glavne dijagonale
 #parametri su mu matrica i broj k predstavlja koju dijagonalu hocemo (1 nas pomera gore za 1, a -2 nas pomera dole za 2)
 
 reverse(M)              #obrtanje matrice

@@ -28,10 +28,5 @@ y3 = 2*sin.(pi/3*t1)
 
 yz = y3
 yz[findall((yz .< 1) .& (yz .> -1))] .= NaN
-yz = max.(yz,-2)
-yz = min.(yz,2)
-
-
 
 scatter!(t1,yz, markershape=:star6)
-

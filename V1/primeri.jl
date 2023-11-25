@@ -9,10 +9,10 @@ pp = A[3,1]
 
 #primer 3
 M = [0 0 0 0 0;
-    0 0 0 0 0;
-    1 0 0 0 0;
-    0 0 0 0 0;
-    0 0 0 0 0]
+     0 0 0 0 0;
+     1 0 0 0 0;
+     0 0 0 0 0;
+     0 0 0 0 0]
 
 M_logical = convert.(Bool, M)       #ne zaboravi konverziju!
 p = A[M_logical]
